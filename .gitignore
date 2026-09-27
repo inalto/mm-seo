@@ -1,0 +1,22 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Dependencies
+/node_modules/
+/vendor/
+
+# AI assistant files (keep out of the repo)
+/.claude/
+/.cursor/
+/.cursorrules
+/.windsurfrules
+/.aider*
+CLAUDE.md
+CLAUDE.local.md
+AGENTS.md
+GEMINI.md
+.github/copilot-instructions.md

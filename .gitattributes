@@ -1,0 +1,33 @@
+# Normalize line endings
+* text=auto eol=lf
+*.mo binary
+*.png binary
+*.jpg binary
+*.gif binary
+*.woff binary
+*.woff2 binary
+
+# Exclude dev files from `git archive` and release zips
+/.gitattributes          export-ignore
+/.gitignore              export-ignore
+/.github                 export-ignore
+/.editorconfig           export-ignore
+/*.md                    export-ignore
+/tests                   export-ignore
+/bin                     export-ignore
+/node_modules            export-ignore
+/phpunit.xml*            export-ignore
+/phpcs.xml*              export-ignore
+/.phpcs.xml*             export-ignore
+/phpstan.neon*           export-ignore
+/composer.json           export-ignore
+/composer.lock           export-ignore
+/package.json            export-ignore
+/package-lock.json       export-ignore
+
+# AI assistant files
+/.claude                 export-ignore
+/.cursor                 export-ignore
+/.cursorrules            export-ignore
+/.windsurfrules          export-ignore
+/.aider*                 export-ignore
