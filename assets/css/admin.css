@@ -1,0 +1,238 @@
+/* MM SEO Admin Styles */
+
+/* Navigation Tabs */
+.mmseo-nav-tabs { margin-bottom: 20px; }
+
+/* Module grid on dashboard */
+.mmseo-modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    margin: 16px 0;
+}
+.mmseo-module-card {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    padding: 12px;
+}
+.mmseo-module-card label { font-weight: 600; display: block; margin-bottom: 4px; }
+.mmseo-module-card p { color: #646970; margin: 0; font-size: 13px; }
+
+/* Score dots (list-table column) */
+.mmseo-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    vertical-align: middle;
+    font-size: 0;
+    line-height: 0;
+}
+.mmseo-dot--green  { background-color: #00a32a; }
+.mmseo-dot--amber  { background-color: #dba617; }
+.mmseo-dot--red    { background-color: #d63638; }
+.mmseo-dot--gray   { background-color: #8c8f94; }
+
+/* ── MM Score badge ───────────────────────────────────────────────────────── */
+
+.mmseo-score-badge {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 4px;
+    line-height: 1;
+}
+
+.mmseo-score-number {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.mmseo-score-sep {
+    font-size: 16px;
+    color: #646970;
+}
+
+.mmseo-score-rating {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+/* Rating tint colours */
+.mmseo-rating--excellent { background: #00a32a22; color: #00a32a; }
+.mmseo-rating--good      { background: #00a32a22; color: #00a32a; }
+.mmseo-rating--fair      { background: #dba61722; color: #dba617; }
+.mmseo-rating--poor      { background: #d6363822; color: #d63638; }
+
+/* ── Breakdown chips ──────────────────────────────────────────────────────── */
+
+.mmseo-breakdown-chips {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 4px 0 8px;
+}
+
+.mmseo-breakdown-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    background: #f6f7f7;
+    border: 1px solid #c3c4c7;
+    white-space: nowrap;
+}
+
+.mmseo-breakdown-chip-label { color: #646970; }
+.mmseo-breakdown-chip-score { font-weight: 700; }
+
+/* ── Analysis list category headings ─────────────────────────────────────── */
+
+.mmseo-analysis-cat-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 600;
+    color: #646970;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 8px 0 3px;
+    border-bottom: 1px solid #f0f0f1;
+    margin-bottom: 2px;
+}
+
+.mmseo-cat-heading-label { flex: 1; }
+.mmseo-cat-heading-score { font-weight: 700; }
+
+/* Column width */
+.column-mmseo_score { width: 48px; text-align: center; }
+
+/* Snippet preview (SERP) */
+.mmseo-snippet-preview {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 16px;
+    max-width: 600px;
+    font-family: Arial, sans-serif;
+    margin: 12px 0;
+}
+.mmseo-snippet-url {
+    font-size: 12px;
+    color: #006621;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 2px;
+}
+.mmseo-snippet-favicon {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #4CAF50;
+    display: inline-block;
+    flex-shrink: 0;
+}
+.mmseo-snippet-title {
+    color: #1a0dab;
+    font-size: 20px;
+    line-height: 1.3;
+    max-width: 600px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+.mmseo-snippet-desc {
+    color: #545454;
+    font-size: 14px;
+    line-height: 1.58;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Analysis list */
+.mmseo-analysis-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.mmseo-analysis-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 4px 0;
+    font-size: 13px;
+    line-height: 1.4;
+}
+.mmseo-analysis-list .mmseo-dot { flex-shrink: 0; margin-top: 3px; }
+
+/* Health checks */
+.mmseo-health-checks { margin: 12px 0; }
+.mmseo-health-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f1;
+    font-size: 13px;
+}
+.mmseo-health-item:last-child { border-bottom: none; }
+.mmseo-health-label { font-weight: 600; min-width: 180px; }
+
+/* Settings accordion */
+.mmseo-accordion { margin: 12px 0; }
+.mmseo-accordion-item { border: 1px solid #c3c4c7; margin-bottom: 4px; border-radius: 2px; }
+.mmseo-accordion-header {
+    background: #f6f7f7;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+.mmseo-accordion-header:hover { background: #f0f0f1; }
+.mmseo-accordion-body { padding: 16px; display: none; }
+.mmseo-accordion-body.open { display: block; }
+
+/* Redirects table */
+.mmseo-redirects-table { width: 100%; border-collapse: collapse; }
+.mmseo-redirects-table th,
+.mmseo-redirects-table td { padding: 6px 8px; border: 1px solid #c3c4c7; font-size: 13px; }
+.mmseo-redirects-table th { background: #f6f7f7; text-align: left; }
+
+/* Progress bar */
+.mmseo-progress-wrap { margin: 12px 0; }
+.mmseo-progress-bar {
+    height: 16px;
+    background: #f0f0f1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.mmseo-progress-bar-fill {
+    height: 100%;
+    background: #0073aa;
+    width: 0%;
+    transition: width 0.3s;
+}
+
+/* Var inserter */
+.mmseo-var-inserter { margin-left: 8px; }
+
+/* Char counter */
+.mmseo-char-counter { font-size: 12px; margin-left: 4px; }

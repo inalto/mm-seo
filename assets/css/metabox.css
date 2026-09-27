@@ -1,0 +1,199 @@
+/* MM SEO Metabox Styles */
+
+/* Tab navigation */
+.mmseo-metabox-tabs {
+    display: flex;
+    border-bottom: 1px solid #c3c4c7;
+    margin-bottom: 16px;
+    gap: 0;
+}
+.mmseo-metabox-tabs a {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #646970;
+    border: 1px solid transparent;
+    border-bottom: none;
+    margin-bottom: -1px;
+    font-size: 13px;
+}
+.mmseo-metabox-tabs a:hover { color: #0073aa; }
+.mmseo-metabox-tabs a.active {
+    color: #1d2327;
+    background: #fff;
+    border-color: #c3c4c7;
+    border-bottom-color: #fff;
+    font-weight: 600;
+}
+
+/* Tab panels */
+.mmseo-tab-panel { display: none; padding: 8px 0; }
+.mmseo-tab-panel.active { display: block; }
+
+/* Field rows */
+.mmseo-field-row { margin-bottom: 14px; }
+.mmseo-field-row label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+.mmseo-field-row input[type="text"],
+.mmseo-field-row input[type="url"],
+.mmseo-field-row textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+.mmseo-field-row textarea { min-height: 80px; resize: vertical; }
+
+/* Snippet preview */
+#mmseo-snippet {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 14px;
+    margin-bottom: 14px;
+    max-width: 600px;
+    font-family: Arial, sans-serif;
+    min-height: 90px;
+}
+
+/* ── MM Score section ──────────────────────────────────────────────────────── */
+
+.mmseo-mm-score-section {
+    margin: 10px 0 6px;
+}
+
+.mmseo-mm-score-label {
+    margin: 8px 0 4px;
+    font-size: 13px;
+}
+
+/* Score badge: large number + "/100" + rating chip */
+.mmseo-score-wrap { margin: 4px 0 6px; }
+
+.mmseo-score-badge {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 4px;
+    line-height: 1;
+}
+
+.mmseo-score-number {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.mmseo-score-sep {
+    font-size: 16px;
+    color: #646970;
+}
+
+.mmseo-score-rating {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+/* Rating colours (background tint + text derived from traffic-light palette) */
+.mmseo-rating--excellent { background: #00a32a22; color: #00a32a; }
+.mmseo-rating--good      { background: #00a32a22; color: #00a32a; }
+.mmseo-rating--fair      { background: #dba61722; color: #dba617; }
+.mmseo-rating--poor      { background: #d6363822; color: #d63638; }
+
+/* Breakdown chips row */
+.mmseo-breakdown-wrap { margin: 4px 0 8px; }
+
+.mmseo-breakdown-chips {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.mmseo-breakdown-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    background: #f6f7f7;
+    border: 1px solid #c3c4c7;
+    white-space: nowrap;
+}
+
+.mmseo-breakdown-chip-label { color: #646970; }
+.mmseo-breakdown-chip-score { font-weight: 700; }
+
+/* Dots */
+.mmseo-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    vertical-align: middle;
+    font-size: 0;
+}
+.mmseo-dot--green  { background-color: #00a32a; }
+.mmseo-dot--amber  { background-color: #dba617; }
+.mmseo-dot--red    { background-color: #d63638; }
+.mmseo-dot--gray   { background-color: #8c8f94; }
+
+/* Analysis list */
+#mmseo-analysis {
+    list-style: none;
+    margin: 4px 0;
+    padding: 0;
+}
+
+/* Category heading row */
+.mmseo-analysis-cat-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 600;
+    color: #646970;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 8px 0 3px;
+    border-bottom: 1px solid #f0f0f1;
+    margin-bottom: 2px;
+}
+
+.mmseo-cat-heading-label { flex: 1; }
+.mmseo-cat-heading-score { font-weight: 700; }
+
+/* Individual check item */
+.mmseo-analysis-check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 3px 0;
+    font-size: 12px;
+    line-height: 1.4;
+}
+.mmseo-analysis-check-item .mmseo-dot { flex-shrink: 0; margin-top: 2px; }
+
+/* Analysis note */
+#mmseo-analysis-note {
+    color: #646970;
+    font-size: 12px;
+    font-style: italic;
+    margin: 6px 0;
+}
+
+/* Char counters */
+.mmseo-char-counter { font-size: 12px; margin-left: 6px; }
+
+/* Media buttons */
+.mmseo-media-button { margin-left: 6px; }
+
+/* Checkbox rows */
+.mmseo-checkbox-row { display: flex; gap: 16px; flex-wrap: wrap; margin: 8px 0; }
+.mmseo-checkbox-row label { font-weight: normal; }
